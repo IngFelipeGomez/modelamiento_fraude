@@ -1,0 +1,39 @@
+# Python / Entornos
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+.env
+.venv
+venv*/
+env*/
+venv310/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# IDE/OS
+.vscode/
+*.code-workspace
+.DS_Store
+Thumbs.db
+
+# Datos (ignora por defecto)
+data/**/*.csv
+data/**/*.xlsx
+data/**/*.parquet
+
+# Mantener este dataset específico (quitar comentario si quieres subirlo)
+!data/Tabla Trabajo Grupal N°2.xlsx
+
+# Modelos (ignora por defecto)
+*.joblib
+*.pkl
+*.sav
+*.h5
+
+# Mantener estos modelos necesarios
+!model/model.pkl
+!model/encoder.pkl
