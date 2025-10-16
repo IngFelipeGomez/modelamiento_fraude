@@ -58,7 +58,7 @@ Se eligió por su mejor equilibrio entre precisión y recall.
 ---
 
 ## 🧩 Estructura del Proyecto
-modelamiento_fraude/
+
 modelamiento_fraude/
 │
 ├── data/                  # Datos originales
@@ -133,6 +133,7 @@ uvicorn main:app --reload
    scikit-learn
    joblib
    numpy
+
 
 
 
