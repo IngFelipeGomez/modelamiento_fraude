@@ -60,19 +60,24 @@ Se eligió por su mejor equilibrio entre precisión y recall.
 ## 🧩 Estructura del Proyecto
 modelamiento_fraude/
 │
+
 ├── data/
 │ └── Tabla Trabajo Grupal N°2.xlsx
 │
+
 ├── model/
 │ ├── encoder.pkl
 │ └── model.pkl
 │
+
 ├── notebooks/
 │ └── Tarea_Grupal_Tech.ipynb
 │
+
 ├── src/
 │ └── main.py
 │
+
 ├── requirements.txt
 └── evidencia_api.png
 
@@ -104,6 +109,9 @@ uvicorn main:app --reload
    En la interfaz interactiva (/docs) puedes probar el endpoint /predict.
 
 **Ejemplo de entrada:**
+Para el campo de "Edad" debe ingresar un valor mayor a 18 años.
+
+Para el campo  "Nivel_Educacional debe ingresar uno de los sigueintes valores (entre comillas): "Bas": Educación Básica, "Med": Educación Media, "SupInc": Superior Incompleta, "SupCom": Superior Completa.
 
 {
   "Edad": 35,
@@ -132,6 +140,9 @@ uvicorn main:app --reload
    scikit-learn
    joblib
    numpy
+
+
+
 
 
 
