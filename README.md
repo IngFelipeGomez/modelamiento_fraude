@@ -3,7 +3,7 @@
 ### Universidad Adolfo Ibáñez  
 **Curso:** Cloud Computing  
 **Profesor:** Ahmad Armoush  
-**Fecha:** 15-10-2025  
+**Fecha:** 16-10-2025  
 
 ---
 
@@ -227,6 +227,7 @@ Json:   https://modelamiento-fraude.onrender.com/docs
 Formulario:   https://modelamiento-fraude.onrender.com/form
 
 volver a la sección donde se explica el uso de la api [uso de la API](#uso-de-la-api)
+
 
 
 
