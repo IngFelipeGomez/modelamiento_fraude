@@ -84,7 +84,7 @@ modelamiento_fraude/
 
 1. **Clonar el repositorio**
    ```bash
-   git clone https://github.com/tu_usuario/modelamiento_fraude.git
+   git clone https://github.com/IngFelipeGomez/modelamiento_fraude.git
    cd modelamiento_fraude
 
 2. **(Opcional) Crear entorno virtual**
@@ -161,6 +161,7 @@ Para el campo "Ratio_Ingresos_Deudas": Debe ingresar un valor entre 0 y 1.
    scikit-learn
    joblib
    numpy
+
 
 
 
