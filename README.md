@@ -58,24 +58,25 @@ Se eligió por su mejor equilibrio entre precisión y recall.
 ---
 
 ## 🧩 Estructura del Proyecto
+
 modelamiento_fraude/
 │
-├── data/
-│ └── Tabla Trabajo Grupal N°2.xlsx
+├── data/                  # Datos originales
+│   └── Tabla Trabajo Grupal N°2.xlsx
 │
-├── model/
-│ ├── encoder.pkl
-│ └── model.pkl
+├── model/                 # Modelos entrenados y encoder
+│   ├── encoder.pkl
+│   └── model.pkl
 │
-├── notebooks/
-│ └── Tarea_Grupal_Tech.ipynb
+├── notebooks/             # Exploración y modelamiento
+│   └── Tarea_Grupal_Tech.ipynb
 │
-├── src/
-│ └── main.py
+├── src/                   # Código fuente de la API
+│   └── main.py
 │
+├── requirements.txt       # Dependencias del proyecto
+└── evidencia_api.png      # Captura de la API funcionando
 
-├── requirements.txt
-└── evidencia_api.png
 
 ## 🚀 Ejecución Local
 
@@ -85,18 +86,23 @@ modelamiento_fraude/
    cd modelamiento_fraude
 
 2. **(Opcional) Crear entorno virtual**
-  python -m venv venv
-venv\Scripts\activate        # En Windows  
-source venv/bin/activate     # En Linux/Mac
+
+
+   ```bash
+   python -m venv venv
+   venv\Scripts\activate        # En Windows  
+   source venv/bin/activate     # En Linux/Mac
    
-3. **Instalar dependencias**
- pip install -r requirements.txt
+4. **Instalar dependencias**
+   ```bash
+    pip install -r requirements.txt
 
-4. **Ejecutar la API**
-cd src
-uvicorn main:app --reload
+7. **Ejecutar la API**
+   ```bash
+   cd src
+   uvicorn main:app --reload
 
-5. **Abrir en el navegador**
+8. **Abrir en el navegador**
    http://127.0.0.1:8000/docs
 
 
@@ -123,9 +129,10 @@ uvicorn main:app --reload
 Para el campo  "Nivel_Educacional debe ingresar uno de los sigueintes valores (entre comillas): "Bas": Educación Básica, "Med": Educación Media, "SupInc": Superior Incompleta, "SupCom": Superior Completa.
 
 Para el campo "Ratio_Ingresos_Deudas": Debe ingresar un valor entre 0 y 1
+   Json
 {
   "Edad": 35,
-  "Nivel_Educacional": Med,
+  "Nivel_Educacional": 2,
   "Años_Trabajando": 10,
   "Ingresos": 45.0,
   "Deuda_Comercial": 10.5,
@@ -150,6 +157,7 @@ Para el campo "Ratio_Ingresos_Deudas": Debe ingresar un valor entre 0 y 1
    scikit-learn
    joblib
    numpy
+
 
 
 
