@@ -8,7 +8,7 @@
 ---
 
 ## 👥 Integrantes del Grupo
-- Desirée Vera  
+- Desiréé Vera  
 - Felipe Gómez  
 - Harmynn Garrido  
 - Diego Granados  
@@ -159,6 +159,7 @@ Para el campo "Ratio_Ingresos_Deudas": Debe ingresar un valor entre 0 y 1.
    scikit-learn
    joblib
    numpy
+
 
 
 
