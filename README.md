@@ -71,7 +71,6 @@ modelamiento_fraude/
 │
 ├── notebooks/                   # Exploración y modelamiento
 │   ├── AED_fraude.py
-│   ├── Tarea_Grupal_Tech.ipynb
 │   ├── modelamiento_fraude.py
 │   └── test_model.py
 │
@@ -227,6 +226,7 @@ Json:   https://modelamiento-fraude.onrender.com/docs
 Formulario:   https://modelamiento-fraude.onrender.com/form
 
 volver a la sección donde se explica el uso de la api [uso de la API](#uso-de-la-api)
+
 
 
 
