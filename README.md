@@ -123,11 +123,12 @@ modelamiento_fraude/
 4. **Ejecutar la API**
    ```bash
    cd src
-   uvicorn main:app --reload
+   uvicorn main2:app --reload
 
 5. **Abrir en el navegador**
-   http://127.0.0.1:8000/docs
-
+   
+   **Formato Json** : http://127.0.0.1:8000/docs;
+   **Formulario** : http://127.0.0.1:8000/form
 
 ## Uso de la API
    En la interfaz interactiva (/docs) puedes probar el endpoint /predict.
@@ -222,9 +223,11 @@ openpyxl==3.1.2
    se comienza a desplegar e instalar dependencias, depende del modelo, para este modelo demoró aproximadamente 4 minutos en desplegar 
 
 5. **Abrir en el navegador**
-https://modelamiento-fraude.onrender.com/docs
+Json:   https://modelamiento-fraude.onrender.com/docs
+Formulario:   https://modelamiento-fraude.onrender.com/form
 
 volver a la sección donde se explica el uso de la api [uso de la API](#uso-de-la-api)
+
 
 
 
