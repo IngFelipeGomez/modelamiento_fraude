@@ -125,7 +125,8 @@ modelamiento_fraude/
    uvicorn main2:app --reload
 
 5. **Abrir en el navegador**
-   
+
+   La API ofrece dos interfaces principales para la predicción de riesgo:
    **Formato Json** : http://127.0.0.1:8000/docs;
    **Formulario** : http://127.0.0.1:8000/form
 
@@ -175,6 +176,16 @@ Para el campo "Ratio_Ingresos_Deudas": Debe ingresar un valor entre 0 y 1.
 | Variable | Tipo | Descripción |
 |-----------|------|-------------|
 | Default | Binaria | 1 = incurre en default / 0 = paga correctamente |
+
+Para pruebas visuales y no técnicas, acceda al endpoint /form. Esta interfaz web permite ingresar los datos directamente en un formulario y ver el resultado de la predicción en tiempo real.
+
+**Ejemplo de entrada:**
+
+<img width="868" height="909" alt="Ejemplo Entra Form" src="https://github.com/user-attachments/assets/4e534e00-ec7b-4878-8fb7-3181cb4c9cbd" />
+
+**Ejemplo de salida:**
+
+<img width="536" height="193" alt="Ejemplo Salida Form" src="https://github.com/user-attachments/assets/c4fa43be-2aa7-4a80-9f1d-39c8acf4a8bf" />
 
 
 **Dependencias principales**
@@ -226,6 +237,7 @@ Json:   https://modelamiento-fraude.onrender.com/docs
 Formulario:   https://modelamiento-fraude.onrender.com/form
 
 volver a la sección donde se explica el uso de la api [uso de la API](#uso-de-la-api)
+
 
 
 
