@@ -58,19 +58,23 @@ Se eligió por su mejor equilibrio entre precisión y recall.
 ---
 
 ## 🧩 Estructura del Proyecto
-
 modelamiento_fraude/
-├── data/                  # Datos originales
-│   └── Tabla Trabajo Grupal N°2.xlsx
-├── model/                 # Modelos entrenados y encoder
-│   ├── encoder.pkl
-│   └── model.pkl
-├── notebooks/             # Exploración y modelamiento
-│   └── Tarea_Grupal_Tech.ipynb
-├── src/                   # Código fuente de la API
-│   └── main.py
-├── requirements.txt       # Dependencias del proyecto
-└── evidencia_api.png      # Captura de la API funcionando
+│
+├── data/
+│ └── Tabla Trabajo Grupal N°2.xlsx
+│
+├── model/
+│ ├── encoder.pkl
+│ └── model.pkl
+│
+├── notebooks/
+│ └── Tarea_Grupal_Tech.ipynb
+│
+├── src/
+│ └── main.py
+│
+├── requirements.txt
+└── evidencia_api.png
 
 ## 🚀 Ejecución Local
 
@@ -128,6 +132,7 @@ uvicorn main:app --reload
    scikit-learn
    joblib
    numpy
+
 
 
 
