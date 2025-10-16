@@ -6,7 +6,7 @@ pytest==7.1.2
 pylint ==2.15.0
 black == 22.6.0
 pandas == 2.2.0
-numpy==1.26.0
+numpy==1.26.4
 scikit-learn==1.4.0
 category_encoders==2.0.0
 matplotlib==3.8.0
