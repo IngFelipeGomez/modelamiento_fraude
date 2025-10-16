@@ -62,21 +62,39 @@ Se eligió por su mejor equilibrio entre precisión y recall.
 ```bash
 modelamiento_fraude/
 │
-├── data/                    # Datos originales
-│   └── Tabla Trabajo Grupal Nº2.xlsx
+├── data/                         # Datos originales
+│   └── Tabla Trabajo Grupal N°2.xlsx
 │
-├── model/                   # Modelos entrenados y encoder
+├── model/                        # Modelos entrenados y codificadores
 │   ├── encoder.pkl
 │   └── model.pkl
 │
-├── notebooks/               # Exploración y modelamiento
-│   └── Tarea_Grupal_Tech.ipynb
+├── notebooks/                   # Exploración y modelamiento
+│   ├── AED_fraude.py
+│   ├── Tarea_Grupal_Tech.ipynb
+│   ├── modelamiento_fraude.py
+│   └── test_model.py
 │
-├── src/                     # Código fuente de la API
-│   └── main.py
+├── src/                          # Código fuente de la API
+│   ├── __init__.py
+│   ├── main.py
+│   ├── .gitattributes
+│   ├── .gitignore
+│   ├── python-version
+│   ├── runtime.txt
+│   ├── README.md
+│   └── requirements.txt
 │
-├── requirements.txt         # Dependencias del proyecto
-└── evidencia_api.png        # Captura de la API funcionando
+├── documentos/                   # Documentación técnica y ejecutiva
+│   ├── Analisis y decisiones metodologicas.pdf
+│   └── Resumen de los Resultados.pdf
+│
+├── demo/                         # Evidencia de despliegue
+│   └── Despliegue_local.mp4
+│
+├── evidencia_api.png             # Captura de funcionamiento de la API
+└── requirements.txt              # Dependencias del proyecto
+
 ```
 
 
@@ -168,6 +186,7 @@ Para el campo "Ratio_Ingresos_Deudas": Debe ingresar un valor entre 0 y 1.
    joblib
    numpy
 ```
+
 
 
 
