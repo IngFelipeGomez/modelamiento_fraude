@@ -59,22 +59,23 @@ Se eligió por su mejor equilibrio entre precisión y recall.
 
 ## 🧩 Estructura del Proyecto
 modelamiento_fraude/
+modelamiento_fraude/
 │
-├── data/
-│ └── Tabla Trabajo Grupal N°2.xlsx
+├── data/                  # Datos originales
+│   └── Tabla Trabajo Grupal N°2.xlsx
 │
-├── model/
-│ ├── encoder.pkl
-│ └── model.pkl
+├── model/                 # Modelos entrenados y encoder
+│   ├── encoder.pkl
+│   └── model.pkl
 │
-├── notebooks/
-│ └── Tarea_Grupal_Tech.ipynb
+├── notebooks/             # Exploración y modelamiento
+│   └── Tarea_Grupal_Tech.ipynb
 │
-├── src/
-│ └── main.py
+├── src/                   # Código fuente de la API
+│   └── main.py
 │
-├── requirements.txt
-└── evidencia_api.png
+├── requirements.txt       # Dependencias del proyecto
+└── evidencia_api.png      # Captura de la API funcionando
 
 ## 🚀 Ejecución Local
 
@@ -84,16 +85,16 @@ modelamiento_fraude/
    cd modelamiento_fraude
 
 2. **(Opcional) Crear entorno virtual**
-   python -m venv venv
-   venv\Scripts\activate        # En Windows  
-   source venv/bin/activate     # En Linux/Mac
+  python -m venv venv
+venv\Scripts\activate        # En Windows  
+source venv/bin/activate     # En Linux/Mac
    
 3. **Instalar dependencias**
-   pip install -r requirements.txt
+ pip install -r requirements.txt
 
 4. **Ejecutar la API**
-   cd src
-   uvicorn main:app --reload
+cd src
+uvicorn main:app --reload
 
 5. **Abrir en el navegador**
    http://127.0.0.1:8000/docs
@@ -106,14 +107,14 @@ modelamiento_fraude/
 **Ejemplo de entrada:**
 
 {
-  "Edad" *Seleccionar Número entre 0 y 100*: 35,
-  "Nivel_Educacional" *Seleccionar 1 de los siguientes*:  (SupInc,  Med,  Bas,  Posg,  SupCom),
-  "Años_Trabajando" *Seleccionar Número entre 0 y 100*: 10,
-  "Ingresos" *Seleccionar Número entre 0 y 100*: 45.0,
-  "Deuda_Comercial"*Seleccionar Número entre 0 y 100*: 10.5,
-  "Deuda_Credito" *Seleccionar Número entre 0 y 100* : 3.5,
-  "Otras_Deudas" *Seleccionar Número entre 0 y 100*: 2.0,
-  "Ratio_Ingresos_Deudas" *Seleccionar Número entre 0 y 1*: 0.35
+  "Edad": 35,
+  "Nivel_Educacional": 2,
+  "Años_Trabajando": 10,
+  "Ingresos": 45.0,
+  "Deuda_Comercial": 10.5,
+  "Deuda_Credito": 3.5,
+  "Otras_Deudas": 2.0,
+  "Ratio_Ingresos_Deudas": 0.35
 }
 
 **Ejemplo de salida:**
@@ -132,6 +133,7 @@ modelamiento_fraude/
    scikit-learn
    joblib
    numpy
+
 
 
 
