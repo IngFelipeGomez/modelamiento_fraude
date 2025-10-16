@@ -125,7 +125,7 @@ modelamiento_fraude/
 | Ratio_Ingresos_Deudas | Numérica | Proporción entre ingresos y deudas |
 | Default | Binaria | 1 = incurre en default / 0 = paga correctamente |
 
-Para el campo  "Nivel_Educacional debe ingresar uno de los sigueintes valores (entre comillas): "Bas": Educación Básica, "Med": Educación Media, "SupInc": Superior Incompleta, "SupCom": Superior Completa.
+Para el campo  "Nivel_Educacional debe ingresar uno de los siguientes valores (entre comillas): "Bas": Educación Básica, "Med": Educación Media, "SupInc": Superior Incompleta, "SupCom": Superior Completa.
 
 Para el campo "Ratio_Ingresos_Deudas": Debe ingresar un valor entre 0 y 1.
 
@@ -167,6 +167,7 @@ Para el campo "Ratio_Ingresos_Deudas": Debe ingresar un valor entre 0 y 1.
    joblib
    
    numpy
+
 
 
 
