@@ -128,8 +128,7 @@ def home():
     
     ### ⚠️ Nivel Educacional
     El campo **'Nivel_Educacional'** solo acepta los siguientes valores: **Bas, Med, SupInc, SupCom, Posg**.
-    Utilice el menú desplegable al hacer clic en el valor predeterminado del JSON para seleccionarlo.
-    """
+        """
 )
 def predecir_default(cliente: ClienteData):
     """
