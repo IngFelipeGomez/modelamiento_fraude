@@ -130,7 +130,7 @@ Para el campo  "Nivel_Educacional debe ingresar uno de los sigueintes valores (e
 
 Para el campo "Ratio_Ingresos_Deudas": Debe ingresar un valor entre 0 y 1.
 
-      ```bash
+      ```
          {
            "Edad": 35,
            "Nivel_Educacional": SupInc,
@@ -143,6 +143,7 @@ Para el campo "Ratio_Ingresos_Deudas": Debe ingresar un valor entre 0 y 1.
          }
 
 **Ejemplo de salida:**
+
 {
   "probabilidad_fraude": 0.6032,
   "prediccion": "Sí"
@@ -150,6 +151,7 @@ Para el campo "Ratio_Ingresos_Deudas": Debe ingresar un valor entre 0 y 1.
 
 
 **Dependencias principales**
+
    text
    Copiar código
    fastapi
@@ -158,6 +160,7 @@ Para el campo "Ratio_Ingresos_Deudas": Debe ingresar un valor entre 0 y 1.
    scikit-learn
    joblib
    numpy
+
 
 
 
