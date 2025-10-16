@@ -106,14 +106,14 @@ modelamiento_fraude/
 **Ejemplo de entrada:**
 
 {
-  "Edad": 35,
-  "Nivel_Educacional": 2,
-  "Años_Trabajando": 10,
-  "Ingresos": 45.0,
-  "Deuda_Comercial": 10.5,
-  "Deuda_Credito": 3.5,
-  "Otras_Deudas": 2.0,
-  "Ratio_Ingresos_Deudas": 0.35
+  "Edad" *Seleccionar Número entre 0 y 100*: 35,
+  "Nivel_Educacional" *Seleccionar 1 de los siguientes*:  (SupInc,  Med,  Bas,  Posg,  SupCom),
+  "Años_Trabajando" *Seleccionar Número entre 0 y 100*: 10,
+  "Ingresos" *Seleccionar Número entre 0 y 100*: 45.0,
+  "Deuda_Comercial"*Seleccionar Número entre 0 y 100*: 10.5,
+  "Deuda_Credito" *Seleccionar Número entre 0 y 100* : 3.5,
+  "Otras_Deudas" *Seleccionar Número entre 0 y 100*: 2.0,
+  "Ratio_Ingresos_Deudas" *Seleccionar Número entre 0 y 1*: 0.35
 }
 
 **Ejemplo de salida:**
@@ -132,5 +132,6 @@ modelamiento_fraude/
    scikit-learn
    joblib
    numpy
+
 
 
