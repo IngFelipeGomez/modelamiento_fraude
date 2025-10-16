@@ -177,7 +177,7 @@ Para el campo "Ratio_Ingresos_Deudas": Debe ingresar un valor entre 0 y 1.
 |-----------|------|-------------|
 | Default | Binaria | 1 = incurre en default / 0 = paga correctamente |
 
-Para pruebas visuales y no técnicas, acceda al endpoint /form. Esta interfaz web permite ingresar los datos directamente en un formulario y ver el resultado de la predicción en tiempo real.
+ La interfaz web ( endpoint /form) permite ingresar los datos directamente en un formulario y ver el resultado de la predicción en tiempo real.
 
 **Ejemplo de entrada:**
 
@@ -237,6 +237,7 @@ Json:   https://modelamiento-fraude.onrender.com/docs
 Formulario:   https://modelamiento-fraude.onrender.com/form
 
 volver a la sección donde se explica el uso de la api [uso de la API](#uso-de-la-api)
+
 
 
 
