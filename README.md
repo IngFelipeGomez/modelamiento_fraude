@@ -60,20 +60,16 @@ Se eligió por su mejor equilibrio entre precisión y recall.
 ## 🧩 Estructura del Proyecto
 modelamiento_fraude/
 │
-
 ├── data/
 │ └── Tabla Trabajo Grupal N°2.xlsx
 │
-
 ├── model/
 │ ├── encoder.pkl
 │ └── model.pkl
 │
-
 ├── notebooks/
 │ └── Tarea_Grupal_Tech.ipynb
 │
-
 ├── src/
 │ └── main.py
 │
@@ -109,13 +105,27 @@ uvicorn main:app --reload
    En la interfaz interactiva (/docs) puedes probar el endpoint /predict.
 
 **Ejemplo de entrada:**
-Para el campo de "Edad" debe ingresar un valor mayor a 18 años.
+
+
+| Variable | Tipo | Descripción |
+|-----------|------|-------------|
+| Edad | Numérica | Edad del cliente |
+| Nivel_Educacional | Categórica | Nivel educacional |
+| Años_Trabajando | Numérica | Años de experiencia laboral |
+| Ingresos | Numérica | Monto encriptado del ingreso |
+| Deuda_Comercial | Numérica | Monto de deuda comercial |
+| Deuda_Credito | Numérica | Monto de deuda de consumo |
+| Otras_Deudas | Numérica | Otras deudas |
+| Ratio_Ingresos_Deudas | Numérica | Proporción entre ingresos y deudas |
+| Default | Binaria | 1 = incurre en default / 0 = paga correctamente |
+
 
 Para el campo  "Nivel_Educacional debe ingresar uno de los sigueintes valores (entre comillas): "Bas": Educación Básica, "Med": Educación Media, "SupInc": Superior Incompleta, "SupCom": Superior Completa.
 
+Para el campo "Ratio_Ingresos_Deudas": Debe ingresar un valor entre 0 y 1
 {
   "Edad": 35,
-  "Nivel_Educacional": 2,
+  "Nivel_Educacional": Med,
   "Años_Trabajando": 10,
   "Ingresos": 45.0,
   "Deuda_Comercial": 10.5,
@@ -140,6 +150,7 @@ Para el campo  "Nivel_Educacional debe ingresar uno de los sigueintes valores (e
    scikit-learn
    joblib
    numpy
+
 
 
 
