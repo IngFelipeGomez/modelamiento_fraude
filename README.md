@@ -8,7 +8,7 @@
 ---
 
 ## 👥 Integrantes del Grupo
-- Desiréé Vera  
+- Désirée Vera  
 - Felipe Gómez  
 - Harmynn Garrido  
 - Diego Granados  
@@ -237,6 +237,7 @@ Json:   https://modelamiento-fraude.onrender.com/docs
 Formulario:   https://modelamiento-fraude.onrender.com/form
 
 volver a la sección donde se explica el uso de la api [uso de la API](#uso-de-la-api)
+
 
 
 
