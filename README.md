@@ -194,15 +194,9 @@ category_encoders==2.0.0
 matplotlib==3.8.0
 seaborn==0.12.2
 openpyxl==3.1.2
-text
-Copiar código
-fastapi
-uvicorn
-pandas
-scikit-learn
-joblib
-numpy
+
 ```
+
 
 
 
