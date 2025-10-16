@@ -105,6 +105,7 @@ uvicorn main:app --reload
 
 **Ejemplo de entrada:**
 Para el campo de "Edad" debe ingresar un valor mayor a 18 años.
+
 Para el campo  "Nivel_Educacional debe ingresar uno de los sigueintes valores (entre comillas): "Bas": Educación Básica, "Med": Educación Media, "SupInc": Superior Incompleta, "SupCom": Superior Completa.
 
 {
@@ -134,6 +135,7 @@ Para el campo  "Nivel_Educacional debe ingresar uno de los sigueintes valores (e
    scikit-learn
    joblib
    numpy
+
 
 
 
