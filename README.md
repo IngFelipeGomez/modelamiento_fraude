@@ -97,7 +97,7 @@ modelamiento_fraude/
 ```
 
 
-## 🚀 Ejecución Local
+## 🚀 Ejecución Local [Video Despliege local](demo/despliegue_local.mp4)
 
 1. **Clonar el repositorio**
    ```bash
@@ -224,7 +224,8 @@ openpyxl==3.1.2
 5. **Abrir en el navegador**
 https://modelamiento-fraude.onrender.com/docs
 
-ahora volver a la parte donde se explica el uso de la api [uso de la API](#uso-de-la-api)
+volver a la sección donde se explica el uso de la api [uso de la API](#uso-de-la-api)
+
 
 
 
