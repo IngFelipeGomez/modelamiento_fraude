@@ -107,7 +107,7 @@ modelamiento_fraude/
 2. **Crear entorno virtual** (importante instalar Python 3.12)
 
    ```bash
-   python3.12 -m venv venv
+   python3.12 -m venv venv (si no funciona esta linea cambiarla por: "py -3.12 -m venv venv")
    venv\Scripts\activate        # En Windows  
    source venv/bin/activate     # En Linux/Mac
 
@@ -227,6 +227,7 @@ Json:   https://modelamiento-fraude.onrender.com/docs
 Formulario:   https://modelamiento-fraude.onrender.com/form
 
 volver a la sección donde se explica el uso de la api [uso de la API](#uso-de-la-api)
+
 
 
 
