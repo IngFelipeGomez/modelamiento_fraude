@@ -12,9 +12,12 @@ from pathlib import Path
 # --- CONFIGURACIÓN DE ARTEFACTOS Y CONSTANTES ---
 
 # Rutas y nombres de archivos de artefactos.
-BASE_DIR = Path(__file__).resolve().parent.parent
-MODEL_PATH = BASE_DIR / "model" / "model.pkl"
-ENCODER_PATH = BASE_DIR / "model" / "encoder.pkl"
+BASE_DIR = Path(__file__).resolve().parent
+MODEL_PATH = Path(__file__).resolve().parent.parent / "model" / "model.pkl"
+ENCODER_PATH = Path(__file__).resolve().parent.parent / "model" / "encoder.pkl"
+
+print(f"🟢 Cargando modelo desde: {MODEL_PATH}")
+print(f"🟢 Cargando encoder desde: {ENCODER_PATH}")
 
 # Variables de entrada esperadas por el modelo (orden y tipo).
 COLUMNAS_INPUT = [
