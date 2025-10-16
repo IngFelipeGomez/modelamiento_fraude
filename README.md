@@ -156,7 +156,7 @@ Para el campo "Ratio_Ingresos_Deudas": Debe ingresar un valor entre 0 y 1.
 
 
 **Dependencias principales**
-
+```bash
    text
    Copiar código
    fastapi
@@ -165,6 +165,7 @@ Para el campo "Ratio_Ingresos_Deudas": Debe ingresar un valor entre 0 y 1.
    scikit-learn
    joblib
    numpy
+```
 
 
 
