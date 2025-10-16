@@ -8,7 +8,7 @@ import pandas as pd
 import pickle
 import os
 import json
-
+from pathlib import Path
 # --- CONFIGURACIÓN DE ARTEFACTOS Y CONSTANTES ---
 
 # Rutas y nombres de archivos de artefactos.
