@@ -87,13 +87,17 @@ modelamiento_fraude/
    git clone https://github.com/IngFelipeGomez/modelamiento_fraude.git
    cd modelamiento_fraude
 
-2. **(Opcional) Crear entorno virtual**
-
+2. **Crear entorno virtual** (importante instalar Python 3.12)
 
    ```bash
-   python -m venv venv
+   python3.12 -m venv venv
    venv\Scripts\activate        # En Windows  
    source venv/bin/activate     # En Linux/Mac
+
+   (en caso de error al activar intentar correr el siguiente codigo:
+   Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+   )
+   
    
 4. **Instalar dependencias**
    ```bash
@@ -131,23 +135,23 @@ modelamiento_fraude/
 
 Para el campo "Ratio_Ingresos_Deudas": Debe ingresar un valor entre 0 y 1.
 
-      ```
-         {
-           "Edad": 35,
-           "Nivel_Educacional": SupInc,
-           "Años_Trabajando": 10,
-           "Ingresos": 45.0,
-           "Deuda_Comercial": 10.5,
-           "Deuda_Credito": 3.5,
-           "Otras_Deudas": 2.0,
-           "Ratio_Ingresos_Deudas": 0.35
-         }
+{
+  "Edad": 35,
+  "Nivel_Educacional": "SupInc",
+  "Años_Trabajando": 10,
+  "Ingresos": 45.0,
+  "Deuda_Comercial": 10.5,
+  "Deuda_Credito": 3.5,
+  "Otras_Deudas": 2.0,
+  "Ratio_Ingresos_Deudas": 0.35
+}
 
 **Ejemplo de salida:**
 
 {
-  *"probabilidad_fraude": 0.6032,
-  "prediccion": "Sí"*
+  "prediction_status": "ALTO RIESGO de Default (1)",
+  "prediction_class": 1,
+  "probability_default": 0.6055
 }
 
 
@@ -161,6 +165,7 @@ Para el campo "Ratio_Ingresos_Deudas": Debe ingresar un valor entre 0 y 1.
    scikit-learn
    joblib
    numpy
+
 
 
 
