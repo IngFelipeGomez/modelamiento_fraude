@@ -3,7 +3,7 @@
 ### Universidad Adolfo Ibáñez  
 **Curso:** Cloud Computing  
 **Profesor:** Ahmad Armoush  
-**Fecha:** 04-10-2025  
+**Fecha:** 15-10-2025  
 
 ---
 
@@ -129,17 +129,17 @@ modelamiento_fraude/
 Para el campo  "Nivel_Educacional debe ingresar uno de los sigueintes valores (entre comillas): "Bas": Educación Básica, "Med": Educación Media, "SupInc": Superior Incompleta, "SupCom": Superior Completa.
 
 Para el campo "Ratio_Ingresos_Deudas": Debe ingresar un valor entre 0 y 1
-   Json
-{
-  "Edad": 35,
-  "Nivel_Educacional": 2,
-  "Años_Trabajando": 10,
-  "Ingresos": 45.0,
-  "Deuda_Comercial": 10.5,
-  "Deuda_Credito": 3.5,
-  "Otras_Deudas": 2.0,
-  "Ratio_Ingresos_Deudas": 0.35
-}
+      ```bash
+         {
+           "Edad": 35,
+           "Nivel_Educacional": SupInc,
+           "Años_Trabajando": 10,
+           "Ingresos": 45.0,
+           "Deuda_Comercial": 10.5,
+           "Deuda_Credito": 3.5,
+           "Otras_Deudas": 2.0,
+           "Ratio_Ingresos_Deudas": 0.35
+         }
 
 **Ejemplo de salida:**
 {
@@ -157,6 +157,7 @@ Para el campo "Ratio_Ingresos_Deudas": Debe ingresar un valor entre 0 y 1
    scikit-learn
    joblib
    numpy
+
 
 
 
