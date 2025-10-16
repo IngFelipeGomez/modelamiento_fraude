@@ -180,15 +180,30 @@ Para el campo "Ratio_Ingresos_Deudas": Debe ingresar un valor entre 0 y 1.
 
 **Dependencias principales**
 ```bash
-   text
-   Copiar código
-   fastapi
-   uvicorn
-   pandas
-   scikit-learn
-   joblib
-   numpy
+catboost==1.2.8
+fastapi==0.110.0
+uvicorn==0.29.0
+pydantic>=2.7.0
+pytest==7.1.2
+pylint ==2.15.0
+black == 22.6.0
+pandas == 2.2.0
+numpy==1.26.4
+scikit-learn==1.6.1
+category_encoders==2.0.0
+matplotlib==3.8.0
+seaborn==0.12.2
+openpyxl==3.1.2
+text
+Copiar código
+fastapi
+uvicorn
+pandas
+scikit-learn
+joblib
+numpy
 ```
+
 
 
 
