@@ -57,25 +57,27 @@ Se eligió por su mejor equilibrio entre precisión y recall.
 
 ---
 
-## 🧩 Estructura del Proyecto
+## 🌿 Estructura del Proyecto
 
+```bash
 modelamiento_fraude/
 │
-├── data/                  # Datos originales
-│   └── Tabla Trabajo Grupal N°2.xlsx
+├── data/                    # Datos originales
+│   └── Tabla Trabajo Grupal Nº2.xlsx
 │
-├── model/                 # Modelos entrenados y encoder
+├── model/                   # Modelos entrenados y encoder
 │   ├── encoder.pkl
 │   └── model.pkl
 │
-├── notebooks/             # Exploración y modelamiento
+├── notebooks/               # Exploración y modelamiento
 │   └── Tarea_Grupal_Tech.ipynb
 │
-├── src/                   # Código fuente de la API
+├── src/                     # Código fuente de la API
 │   └── main.py
 │
-├── requirements.txt       # Dependencias del proyecto
-└── evidencia_api.png      # Captura de la API funcionando
+├── requirements.txt         # Dependencias del proyecto
+└── evidencia_api.png        # Captura de la API funcionando
+```
 
 
 ## 🚀 Ejecución Local
@@ -159,6 +161,7 @@ Para el campo "Ratio_Ingresos_Deudas": Debe ingresar un valor entre 0 y 1.
    scikit-learn
    joblib
    numpy
+
 
 
 
