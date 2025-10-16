@@ -134,7 +134,7 @@ modelamiento_fraude/
 *Para el campo  "Nivel_Educacional debe ingresar uno de los siguientes valores (entre comillas): "Bas": Educación Básica, "Med": Educación Media, "SupInc": Superior Incompleta, "SupCom": Superior Completa, "Posg": Post Grado*
 
 Para el campo "Ratio_Ingresos_Deudas": Debe ingresar un valor entre 0 y 1.
-
+```bash
 {
   "Edad": 35,
   "Nivel_Educacional": "SupInc",
@@ -145,7 +145,7 @@ Para el campo "Ratio_Ingresos_Deudas": Debe ingresar un valor entre 0 y 1.
   "Otras_Deudas": 2.0,
   "Ratio_Ingresos_Deudas": 0.35
 }
-
+```
 **Ejemplo de salida:**
 
 {
@@ -165,6 +165,7 @@ Para el campo "Ratio_Ingresos_Deudas": Debe ingresar un valor entre 0 y 1.
    scikit-learn
    joblib
    numpy
+
 
 
 
