@@ -116,21 +116,20 @@ modelamiento_fraude/
    )
    
    
-4. **Instalar dependencias**
+3. **Instalar dependencias**
    ```bash
     pip install -r requirements.txt
 
-7. **Ejecutar la API**
+4. **Ejecutar la API**
    ```bash
    cd src
    uvicorn main:app --reload
 
-8. **Abrir en el navegador**
+5. **Abrir en el navegador**
    http://127.0.0.1:8000/docs
 
 
-
-**Uso de la API**
+## Uso de la API
    En la interfaz interactiva (/docs) puedes probar el endpoint /predict.
 
 **Ejemplo de entrada:**
@@ -196,6 +195,36 @@ seaborn==0.12.2
 openpyxl==3.1.2
 
 ```
+
+## 🚀 Despliegue en la nube (render.com)
+
+1. **Log In en render con github**
+   ```bash
+  Log in en render con la cuenta de github el cual se conecta automaticamente con el repositorio que se le indique
+
+2. **Crear un nuevo servicio WEB**
+
+   ```bash 
+   crear nuevo servicio,
+   servicio web
+   conectar repositorio
+   en este caso tenemos el archivo main dentro de src, por lo que el comando de start debiera ser: "uvicorn src.main:app --host 0.0.0.0 --port $PORT"
+   elegir opciíon "For Hobby Projects" (free)
+    
+   
+   
+3. **Desplegar servicio**
+   ```bash
+    Presionar "Deploy Web Service"
+
+4. **Dulce Espera**
+   ```bash
+   se comienza a desplegar e instalar dependencias, depende del modelo, para este modelo demoró aproximadamente 4 minutos en desplegar 
+
+5. **Abrir en el navegador**
+https://modelamiento-fraude.onrender.com/docs
+
+ahora volver a la parte donde se explica el uso de la api [uso de la API](#uso-de-la-api)
 
 
 
