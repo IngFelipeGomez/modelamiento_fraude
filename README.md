@@ -149,9 +149,11 @@ Para el campo "Ratio_Ingresos_Deudas": Debe ingresar un valor entre 0 y 1.
 **Ejemplo de salida:**
 
 {
-  "prediction_status": "ALTO RIESGO de Default (1)",
+  *"prediction_status": "ALTO RIESGO de Default (1)",
+  
   "prediction_class": 1,
-  "probability_default": 0.6055
+  
+  "probability_default": 0.6055*
 }
 
 
@@ -166,6 +168,7 @@ Para el campo "Ratio_Ingresos_Deudas": Debe ingresar un valor entre 0 y 1.
    joblib
    numpy
 ```
+
 
 
 
