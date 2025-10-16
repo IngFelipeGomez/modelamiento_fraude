@@ -92,7 +92,6 @@ modelamiento_fraude/
 ├── demo/                         # Evidencia de despliegue
 │   └── Despliegue_local.mp4
 │
-├── evidencia_api.png             # Captura de funcionamiento de la API
 └── requirements.txt              # Dependencias del proyecto
 
 ```
@@ -186,6 +185,7 @@ Para el campo "Ratio_Ingresos_Deudas": Debe ingresar un valor entre 0 y 1.
    joblib
    numpy
 ```
+
 
 
 
