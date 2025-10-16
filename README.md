@@ -185,7 +185,7 @@ Para el campo "Ratio_Ingresos_Deudas": Debe ingresar un valor entre 0 y 1.
 
 **Ejemplo de salida:**
 
-<img width="536" height="193" alt="Ejemplo Salida Form" src="https://github.com/user-attachments/assets/c4fa43be-2aa7-4a80-9f1d-39c8acf4a8bf" />
+<img width="573" height="223" alt="Ejemplo Salida Form" src="https://github.com/user-attachments/assets/283de7a0-39ad-4143-a45f-f4abfd76807c" />
 
 
 **Dependencias principales**
@@ -237,6 +237,7 @@ Json:   https://modelamiento-fraude.onrender.com/docs
 Formulario:   https://modelamiento-fraude.onrender.com/form
 
 volver a la sección donde se explica el uso de la api [uso de la API](#uso-de-la-api)
+
 
 
 
