@@ -84,16 +84,16 @@ modelamiento_fraude/
    cd modelamiento_fraude
 
 2. **(Opcional) Crear entorno virtual**
-   python -m venv venv
-   venv\Scripts\activate        # En Windows  
-   source venv/bin/activate     # En Linux/Mac
+  python -m venv venv
+venv\Scripts\activate        # En Windows  
+source venv/bin/activate     # En Linux/Mac
    
 3. **Instalar dependencias**
-   pip install -r requirements.txt
+ pip install -r requirements.txt
 
 4. **Ejecutar la API**
-   cd src
-   uvicorn main:app --reload
+cd src
+uvicorn main:app --reload
 
 5. **Abrir en el navegador**
    http://127.0.0.1:8000/docs
@@ -132,5 +132,11 @@ modelamiento_fraude/
    scikit-learn
    joblib
    numpy
+
+
+
+
+
+
 
 
