@@ -16,8 +16,8 @@ BASE_DIR = Path(__file__).resolve().parent
 MODEL_PATH = Path(__file__).resolve().parent.parent / "model" / "model.pkl"
 ENCODER_PATH = Path(__file__).resolve().parent.parent / "model" / "encoder.pkl"
 
-print(f"🟢 Cargando modelo desde: {MODEL_PATH}")
-print(f"🟢 Cargando encoder desde: {ENCODER_PATH}")
+print(f" Cargando modelo desde: {MODEL_PATH}")
+print(f" Cargando encoder desde: {ENCODER_PATH}")
 
 # Variables de entrada esperadas por el modelo (orden y tipo).
 COLUMNAS_INPUT = [

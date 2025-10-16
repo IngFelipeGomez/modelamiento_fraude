@@ -62,25 +62,42 @@ Se eligió por su mejor equilibrio entre precisión y recall.
 ```bash
 modelamiento_fraude/
 │
-├── data/                    # Datos originales
-│   └── Tabla Trabajo Grupal Nº2.xlsx
+├── data/                         # Datos originales
+│   └── Tabla Trabajo Grupal N°2.xlsx
 │
-├── model/                   # Modelos entrenados y encoder
+├── model/                        # Modelos entrenados y codificadores
 │   ├── encoder.pkl
 │   └── model.pkl
 │
-├── notebooks/               # Exploración y modelamiento
-│   └── Tarea_Grupal_Tech.ipynb
+├── notebooks/                   # Exploración y modelamiento
+│   ├── AED_fraude.py
+│   ├── Tarea_Grupal_Tech.ipynb
+│   ├── modelamiento_fraude.py
+│   └── test_model.py
 │
-├── src/                     # Código fuente de la API
-│   └── main.py
+├── src/                          # Código fuente de la API
+│   ├── __init__.py
+│   ├── main.py
+│   ├── .gitattributes
+│   ├── .gitignore
+│   ├── python-version
+│   ├── runtime.txt
+│   ├── README.md
+│   └── requirements.txt
 │
-├── requirements.txt         # Dependencias del proyecto
-└── evidencia_api.png        # Captura de la API funcionando
+├── documentos/                   # Documentación técnica y ejecutiva
+│   ├── Analisis y decisiones metodologicas.pdf
+│   └── Resumen de los Resultados.pdf
+│
+├── demo/                         # Evidencia de despliegue
+│   └── Despliegue_local.mp4
+│
+└── requirements.txt              # Dependencias del proyecto
+
 ```
 
 
-## 🚀 Ejecución Local
+## 🚀 Ejecución Local [Video Despliege local](demo/despliegue_local.mp4)
 
 1. **Clonar el repositorio**
    ```bash
@@ -99,21 +116,20 @@ modelamiento_fraude/
    )
    
    
-4. **Instalar dependencias**
+3. **Instalar dependencias**
    ```bash
     pip install -r requirements.txt
 
-7. **Ejecutar la API**
+4. **Ejecutar la API**
    ```bash
    cd src
    uvicorn main:app --reload
 
-8. **Abrir en el navegador**
+5. **Abrir en el navegador**
    http://127.0.0.1:8000/docs
 
 
-
-**Uso de la API**
+## Uso de la API
    En la interfaz interactiva (/docs) puedes probar el endpoint /predict.
 
 **Ejemplo de entrada:**
@@ -150,21 +166,73 @@ Para el campo "Ratio_Ingresos_Deudas": Debe ingresar un valor entre 0 y 1.
 
 {
   "prediction_status": "ALTO RIESGO de Default (1)",
+  
   "prediction_class": 1,
+  
   "probability_default": 0.6055
 }
 
+| Variable | Tipo | Descripción |
+|-----------|------|-------------|
+| Default | Binaria | 1 = incurre en default / 0 = paga correctamente |
+
 
 **Dependencias principales**
+```bash
+catboost==1.2.8
+fastapi==0.110.0
+uvicorn==0.29.0
+pydantic>=2.7.0
+pytest==7.1.2
+pylint ==2.15.0
+black == 22.6.0
+pandas == 2.2.0
+numpy==1.26.4
+scikit-learn==1.6.1
+category_encoders==2.0.0
+matplotlib==3.8.0
+seaborn==0.12.2
+openpyxl==3.1.2
 
-   text
-   Copiar código
-   fastapi
-   uvicorn
-   pandas
-   scikit-learn
-   joblib
-   numpy
+```
+
+## 🚀 Despliegue en la nube (render.com)
+
+1. **Log In en render con github**
+   ```bash
+  Log in en render con la cuenta de github el cual se conecta automaticamente con el repositorio que se le indique
+
+2. **Crear un nuevo servicio WEB**
+
+   ```bash 
+   crear nuevo servicio,
+   servicio web
+   conectar repositorio
+   en este caso tenemos el archivo main dentro de src, por lo que el comando de start debiera ser: "uvicorn src.main:app --host 0.0.0.0 --port $PORT"
+   elegir opciíon "For Hobby Projects" (free)
+    
+   
+   
+3. **Desplegar servicio**
+   ```bash
+    Presionar "Deploy Web Service"
+
+4. **Dulce Espera**
+   ```bash
+   se comienza a desplegar e instalar dependencias, depende del modelo, para este modelo demoró aproximadamente 4 minutos en desplegar 
+
+5. **Abrir en el navegador**
+https://modelamiento-fraude.onrender.com/docs
+
+volver a la sección donde se explica el uso de la api [uso de la API](#uso-de-la-api)
+
+
+
+
+
+
+
+
 
 
 
