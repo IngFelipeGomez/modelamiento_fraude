@@ -144,9 +144,8 @@ Para el campo "Ratio_Ingresos_Deudas": Debe ingresar un valor entre 0 y 1.
 **Ejemplo de salida:**
 
 {
-  "probabilidad_fraude": 0.6032,
-  
-  "prediccion": "Sí"
+  *"probabilidad_fraude": 0.6032,
+  "prediccion": "Sí"*
 }
 
 
@@ -160,6 +159,7 @@ Para el campo "Ratio_Ingresos_Deudas": Debe ingresar un valor entre 0 y 1.
    scikit-learn
    joblib
    numpy
+
 
 
 
